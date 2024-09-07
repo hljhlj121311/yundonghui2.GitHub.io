@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>班级百科 - 第二次运动会</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Lato', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #202122;
+            font-size: 14px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #a2a9b1;
+            padding: 10px 0;
+            margin-bottom: 15px;
+        }
+        .header-content {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            text-decoration: none;
+        }
+        .search-bar {
+            display: flex;
+        }
+        .search-bar input {
+            padding: 6px;
+            border: 1px solid #a2a9b1;
+            border-right: none;
+            border-radius: 2px 0 0 2px;
+            width: 200px;
+        }
+        .search-bar button {
+            padding: 6px 12px;
+            background-color: #36c;
+            color: white;
+            border: none;
+            border-radius: 0 2px 2px 0;
+            cursor: pointer;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 3px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+        h3 {
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: none; /* 移除h3下方的线段 */
+        }
+        h4 {
+            font-size: 16px;
+            border-bottom: none;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        .toc {
+            background-color: #f8f9fa;
+            border: 1px solid #a2a9b1;
+            padding: 8px;
+            display: inline-block;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+        .toc h2 {
+            margin-top: 0;
+            font-size: 16px;
+            border-bottom: none;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding-left: 15px;
+            margin: 5px 0;
+        }
+        .toc ul ul {
+            padding-left: 20px;
+        }
+        .toc a {
+            color: #0645ad;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 13px;
+        }
+        th, td {
+            border: 1px solid #a2a9b1;
+            padding: 6px;
+        }
+        th {
+            background-color: #eaecf0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .infobox {
+            float: right;
+            margin: 0 0 15px 15px;
+            border: 1px solid #a2a9b1;
+            padding: 8px;
+            background-color: #f8f9fa;
+            width: 270px;
+            font-size: 13px;
+        }
+        .infobox h3 {
+            margin-top: 0;
+            text-align: center;
+        }
+        .infobox img {
+            display: block;
+            margin: 0 auto;
+            max-width: 250px;
+        }
+        .uninfobox {
+            float: left;
+            margin: 15px 15px 0 0;
+            border: 1px solid #a2a9b1;
+            padding: 8px;
+            background-color: #f8f9fa;
+            width: 270px;
+            font-size: 13px;
+        }
+        .uninfobox img {
+            display: block;
+            margin: 0 auto;
+            max-width: 250px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            border-top: 1px solid #a2a9b1;
+            padding: 15px 0;
+            margin-top: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #72777d;
+        }
+        @media (max-width: 768px) {
+            .infobox {
+                float: none;
+                width: 100%;
+                margin: 15px 0;
+            }
+            .header-content {
+                flex-direction: column;
+            }
+            .search-bar {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 页面内容保持不变 -->
+    <div class="header">
+        <div class="header-content">
+            <a href="#" class="logo">12班班级百科</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>第一次运动会</h1>
+        
+        <div class="infobox">
+            <h3>第二次运动会</h3>
+            
+            <table>
+                <tr>
+                    <th>时间</th>
+                    <td>第二学期</td>
+                </tr>
+                <tr>
+                    <th>持续时间</th>
+                    <td>一天</td>
+                </tr>
+                <tr>
+                    <th>地点</th>
+                    <td>操场</td>
+                </tr>
+                <tr>
+                    <th>发起人</th>
+                    <td>学校</td>
+                </tr>
+                <tr>
+                    <th>目标</th>
+                    <td>强化学生身体素质、培养学生合作能力、增强学生竞争意识</td>
+                </tr>
+            </table>
+        </div>
+
+        <p>运动会继第一次运动会后再度召开。运动项目分为个人项目和集体项目。参赛个人项目的运动员由班级决定。</p>
+
+        <div class="toc">
+            <h2>目录</h2>
+            <ul>
+                <li><a href="#section1">过程</a>
+                <li><a href="#section2">评价</a>
+                  
+            </ul>
+        </div>
+
+        <h2 id="section1">过程</h2>
+        
+   <p><a href="https://penny-github-io-7sf.pages.dev/">彭</a>（教师）用投票选举的方式选择运动员。本次运动会的个人项目有赛跑、跳高、跳绳、掷铅球等，集体项目有抬重物、捆脚跑、跳长绳等。学生在赛前自行组织练习。</p>
+      <p><a href="https://penny-github-io-7sf.pages.dev/">彭</a>（教师）在晚自习带领学生练习走操场，给学生分发了充气帮用来在走操场时挥舞。因纪律问题，<a href="https://penny-github-io-7sf.pages.dev/">彭</a>（教师）在排练时多次发火，扬言排不好就别想回家。<a href="https://penny-github-io-7sf.pages.dev/">彭</a>（教师）在排练前因忘记还要排练走操场，把责任怪在班委上，理由是班委没有提醒她。</p>
+      <p>学校组织了运动会开幕式，各班学生应学习要求走操场，展现班级活力和精神面貌。运动会期间，个人项目和集体项目依次进行。王（年级主任）在个人运动项目期间征集学生自编诗歌，并用广播在操场播放。学生在操场周围以班为单位，布置板凳原地观赛。</p>
+      <p><a href="https://shierban-github-io.pages.dev/">十二班</a>比赛成绩与第一次运动会相较进步，整体成绩一般。</p>
+        <h2 id="section2">评价</h2>
+    <p><a href="https://penny-github-io-7sf.pages.dev/">彭</a>（教师）组织的选举没有真正落实投票而加入了其强烈的个人意愿，被质疑投票结果的公正性。</p>
+
+    <div class="footer">
+        <p>本页面最后编辑于2024年几月几日 (星期几) 不知道（UTC）。</p>
+        <p>本站的全部文字在知识共享 署名-相同方式共享 3.0协议之条款下提供，附加条款亦可能应用。</p>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+          </html>
